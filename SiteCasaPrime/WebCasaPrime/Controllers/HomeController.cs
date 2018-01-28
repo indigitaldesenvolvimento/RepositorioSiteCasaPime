@@ -14,11 +14,11 @@ namespace WebSiteCasaPrime.Controllers
             return View();
         }
 
-        public ActionResult Contato()
-        {
-            ViewBag.Message = "Your contact page.";
+        //public ActionResult Contato()
+        //{
+        //    ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
+        //    return View();
+        //}
     }
 }

@@ -335,9 +335,11 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  /*//color: #428bca;*/
+  color: antiquewhite;
   text-decoration: none;
 }
+
 
 a:hover,
 a:focus {

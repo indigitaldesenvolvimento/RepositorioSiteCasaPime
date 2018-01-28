@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
@@ -17,13 +17,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @*@Html.ActionLink("Nome do aplicativo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Início", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Serviços", "Service", "Home")</li>
-                    <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Início", "Inicio", "Home")</li>
+                    <li>@Html.ActionLink("Serviços", "Servico", "Home")</li>
+                    @*<li>@Html.ActionLink("Contato", "Contato", "Home")</li>*@
                 </ul>
             </div>
         </div>
@@ -31,11 +30,14 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
+        <br>
+        <footer class="text-center">
             <div>
-                <h4>Redes Sociais</h4>
-                <p>FaceBook - Instagram</p>
-            </div>
+                <h4 class="panel-footer"><b>Contato</b></h4>
+                <p><strong>Email: </strong>comercial@casaprimepinturas.com.br</p><br>
+                <p class="btn btn-lg btn-primary" id="FacebookLink"><a id="link" class="fa fa-facebook fa-2x" href="https://www.facebook.com/casaprimepinturas/" target="_blank">FaceBook</a></p>
+                <p class="btn btn-lg btn-danger" id="InstagramLink"><a id="link" class="fa fa-instagram fa-2x" href="https://www.instagram.com/CasaPrime_1/" target="_blank">Instagram</a></p>
+            </div><br><br>
             <p>CreatedBy@@ Indigital</p>
         </footer>
     </div>
